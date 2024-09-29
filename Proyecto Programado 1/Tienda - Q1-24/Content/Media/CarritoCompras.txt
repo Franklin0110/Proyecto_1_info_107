@@ -1,0 +1,3 @@
+2;Samsung s23;2;Content/Media/samsung.png;450000;True;1
+3;Huawei;3;Content/Media/telefono.png;200000;True;1
+4;Ipad;4;Content/Media/ipad.jpg;7000000;True;1
