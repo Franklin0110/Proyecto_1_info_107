@@ -14,7 +14,7 @@
     <form id="formGeneral" runat="server">
         <header>
             <div class="logo">
-                <img src="Content/Media/logoUh2023.png"alt="ImagenLogo" />
+                <img src="Content/Media/logoUh2023.png" alt="ImagenLogo" />
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Content/Media/logoUh2023.png" />
             </div>
             <nav>
@@ -24,23 +24,24 @@
                 </ul>
             </nav>
             <div>
-                <asp:ImageButton ID="btnCarrito" runat="server" ImageUrl="~/Content/Media/carrito.png" CssClass="btnCarrito" OnClick="btnCarrito_Click"/>
-                <asp:ImageButton ID="btnPersona" runat="server" ImageUrl="~/Content/Media/Persona.jpg" CssClass="btnCarrito" OnClick="btnPersona_Click"/>
-
+                <asp:ImageButton ID="btnCarrito" runat="server" ImageUrl="~/Content/Media/carrito.png" CssClass="btnCarrito" OnClick="btnCarrito_Click" />
+                <asp:ImageButton ID="btnPersona" runat="server" ImageUrl="~/Content/Media/Persona.jpg" CssClass="btnCarrito" OnClick="btnPersona_Click" AlternateText="Ingresar" />
             </div>
         </header>
         <div class="contenedor">
             <h1>Tienda</h1>
             <div id="divArticulos" runat="server"></div>
         </div>
-        
+
 
     </form>
-    <footer><p>Sistema realizado Q1 - 2024</p></footer>
+    <footer>
+        <p>Sistema realizado Q1 - 2024</p>
+    </footer>
 
 
     <%--div oculto para un mensaje--%>
-    
+
     <div class="dialog-container" id="divMensaje" style="display: none;" runat="server">
         <div class="message-box">
             <div id="mensajeContenido">
