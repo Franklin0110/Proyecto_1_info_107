@@ -156,6 +156,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Reserva.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -231,6 +232,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BackendLogin\Cliente.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,6 +240,9 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackendLogin\ControladorCliente.cs" />
+    <Compile Include="BackendLogin\ControladorReserva.cs" />
+    <Compile Include="BackendLogin\ControladorVuelo.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,7 +260,15 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackendLogin\ManejoXML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Registrarse.aspx.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -270,6 +283,7 @@
     <Compile Include="Reserva.aspx.designer.cs">
       <DependentUpon>Reserva.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackendLogin\Reserva.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,6 +305,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="BackendLogin\Vuelo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
