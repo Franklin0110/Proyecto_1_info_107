@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #87CEEB; /* Color de fondo celeste */
+            background-color: #e9ecef; 
             display: flex;
             justify-content: center;
             align-items: center;
