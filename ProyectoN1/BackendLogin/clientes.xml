@@ -18,4 +18,13 @@
     <Contraseña>912785@dV!c3</Contraseña>
     <Rol>cliente</Rol>
   </Cliente>
+  <Cliente>
+    <Nombre>abc</Nombre>
+    <Apellidos>abc</Apellidos>
+    <Identificacion>123</Identificacion>
+    <FechaNacimiento>2024-10-24T00:00:00</FechaNacimiento>
+    <Usuario>abc</Usuario>
+    <Contraseña>abc</Contraseña>
+    <Rol>cliente</Rol>
+  </Cliente>
 </ArrayOfCliente>

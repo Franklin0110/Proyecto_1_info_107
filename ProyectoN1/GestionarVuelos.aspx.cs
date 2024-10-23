@@ -13,6 +13,10 @@ namespace ProyectoN1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["current_client"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
             gvVuelos.DataSource = _controlador_vuelos.ObtenerVuelos();
             gvVuelos.DataBind();
         }
@@ -21,7 +25,8 @@ namespace ProyectoN1
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            Vuelo _vuelo = new Vuelo {
+            Vuelo _vuelo = new Vuelo
+            {
                 Origen = txtOrigen.Text,
                 Destino = txtDestino.Text,
                 AsientosDisponibles = int.Parse(txtCupo.Text),

@@ -13,15 +13,18 @@ namespace ProyectoN1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             try
             {
-                if (_controlador_cliente.Autenticar(txtUsuario.Text, txtContrasena.Text) != null)
+                Cliente cliente = _controlador_cliente.Autenticar(txtUsuario.Text, txtContrasena.Text);
+                 
+                if (cliente != null)
                 {
+                    Session["current_client"] = cliente;
                     Response.Redirect("HomeUsuario.aspx");
                 }
                 else
