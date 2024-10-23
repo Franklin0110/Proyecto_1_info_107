@@ -17,7 +17,7 @@ namespace ProyectoN1
 
         protected void btnNuevaReserva_Click(object sender, EventArgs e)
         {
-            // Lógica para hacer una nueva reserva (vacío por ahora)
+            Response.Redirect("GestionarVuelos.aspx");
         }
 
         protected void btnExportarReservas_Click(object sender, EventArgs e)

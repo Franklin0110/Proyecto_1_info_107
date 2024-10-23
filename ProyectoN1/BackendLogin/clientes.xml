@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfCliente xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Cliente>
+    <Nombre>asdsa</Nombre>
+    <Apellidos>asdasd</Apellidos>
+    <Identificacion>123123</Identificacion>
+    <FechaNacimiento>2024-10-09T00:00:00</FechaNacimiento>
+    <Usuario>asdsa</Usuario>
+    <Contraseña />
+    <Rol>cliente</Rol>
+  </Cliente>
+  <Cliente>
+    <Nombre>Franklin</Nombre>
+    <Apellidos>Rojas Vargas</Apellidos>
+    <Identificacion>119200688</Identificacion>
+    <FechaNacimiento>2024-10-15T00:00:00</FechaNacimiento>
+    <Usuario>Franklin</Usuario>
+    <Contraseña>912785@dV!c3</Contraseña>
+    <Rol>cliente</Rol>
+  </Cliente>
+</ArrayOfCliente>

@@ -10,14 +10,25 @@ namespace ProyectoN1
 {
     public partial class Registrarse : System.Web.UI.Page
     {
+        ControladorCliente _controlador_cliente = new ControladorCliente();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            
         }
 
         protected void btnRegistrarse_Click(object sender, EventArgs e)
         {
-          
+            Cliente cliente = new Cliente 
+            { 
+              Nombre = txtUsuario.Text,
+              Apellidos = txtApellido.Text, 
+              Contraseña = txtContrasena.Text, 
+              FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text), 
+              Identificacion = txtIdentificacion.Text, 
+              Usuario = txtUsuario.Text, Rol = "cliente" 
+            };
+            if (_controlador_cliente.RegistrarCliente(cliente)) Response.Redirect("Login.aspx");
+
 
         }
 

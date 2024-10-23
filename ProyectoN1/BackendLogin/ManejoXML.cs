@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace Proyecto1_progra4
+namespace ProyectoN1
 {
     public class ManejoXML<T>
     {

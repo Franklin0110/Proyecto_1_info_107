@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Gestionar Vuelos</title>
     <style>
         body {
@@ -14,7 +14,7 @@
 
         .container {
             background-color: white;
-            padding: 20px; 
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             max-width: 800px;
@@ -42,7 +42,7 @@
         input[type="time"],
         input[type="number"] {
             width: 100%;
-            padding: 10px; 
+            padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
@@ -52,15 +52,15 @@
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
-            background-color: #007bff; 
+            background-color: #007bff;
             color: white;
             cursor: pointer;
-            margin-right: 10px; 
+            margin-right: 10px;
         }
 
-        button:hover {
-            background-color: #0056b3; 
-        }
+            button:hover {
+                background-color: #0056b3;
+            }
 
         .table {
             width: 100%;
@@ -68,17 +68,17 @@
             margin-top: 20px;
         }
 
-        .table th,
-        .table td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
+            .table th,
+            .table td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
 
-        .table th {
-            background-color: #007bff;
-            color: white;
-        }
+            .table th {
+                background-color: #007bff;
+                color: white;
+            }
 
         .error-message {
             color: red;
@@ -93,7 +93,7 @@
         <div class="container">
             <h2>Gestionar Vuelos</h2>
             <asp:Label ID="lblError" runat="server" CssClass="error-message" Visible="false"></asp:Label>
-            
+
             <div class="form-group">
                 <label for="txtOrigen">Aeropuerto de Origen</label>
                 <asp:TextBox ID="txtOrigen" runat="server" Placeholder="Ingrese el aeropuerto de origen"></asp:TextBox>
@@ -116,10 +116,9 @@
                 <label for="txtCupo">Cupo de Pasajeros</label>
                 <asp:TextBox ID="txtCupo" runat="server" Placeholder="Ingrese el número de pasajeros"></asp:TextBox>
             </div>
-            
-            <button type="submit" runat="server" OnClick="btnAgregar_Click">Agregar Vuelo</button>
-            <button type="submit" runat="server" OnClick="btnModificar_Click">Modificar Vuelo</button>
-            <button type="submit" runat="server" OnClick="btnEliminar_Click">Eliminar Vuelo</button>
+            <asp:Button type="submit" runat="server" OnClick="btnAgregar_Click" Text="Agregar Vuelo" />
+            <asp:Button type="submit" runat="server" OnClick="btnModificar_Click" Text="Modificar Vuelo" />
+            <asp:Button type="submit" runat="server" OnClick="btnEliminar_Click" Text="Eliminar Vuelo" />
         </div>
 
         <div class="container">
@@ -129,8 +128,7 @@
                     <asp:BoundField DataField="Origen" HeaderText="Origen" />
                     <asp:BoundField DataField="Destino" HeaderText="Destino" />
                     <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
-                    <asp:BoundField DataField="Hora" HeaderText="Hora" />
-                    <asp:BoundField DataField="Cupo" HeaderText="Cupo" />
+                    <asp:BoundField DataField="Capacidad" HeaderText="Capacidad" />
                 </Columns>
             </asp:GridView>
         </div>

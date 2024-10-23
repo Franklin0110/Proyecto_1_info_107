@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ArrayOfVuelo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Vuelo>
+    <Origen>asdasda</Origen>
+    <Destino>asdadas</Destino>
+    <Fecha>2024-10-17T00:00:00</Fecha>
+    <Capacidad>0</Capacidad>
+    <AsientosDisponibles>2</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <Origen>otro vuelo</Origen>
+    <Destino>otro vuelo puede</Destino>
+    <Fecha>2024-10-17T00:00:00</Fecha>
+    <Capacidad>0</Capacidad>
+    <AsientosDisponibles>2</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <Origen>asdasdasdas123321</Origen>
+    <Destino>12312asdd</Destino>
+    <Fecha>2024-10-03T00:00:00</Fecha>
+    <Capacidad>0</Capacidad>
+    <AsientosDisponibles>3</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <Origen>asd</Origen>
+    <Destino>asasdas</Destino>
+    <Fecha>2024-10-17T00:00:00</Fecha>
+    <Capacidad>0</Capacidad>
+    <AsientosDisponibles>2</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <Origen>asdas</Origen>
+    <Destino>asdasd</Destino>
+    <Fecha>2024-10-17T00:00:00</Fecha>
+    <Capacidad>0</Capacidad>
+    <AsientosDisponibles>3</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <Origen>asdasdas</Origen>
+    <Destino>asdasda</Destino>
+    <Fecha>2024-10-19T00:00:00</Fecha>
+    <Capacidad>0</Capacidad>
+    <AsientosDisponibles>3</AsientosDisponibles>
+  </Vuelo>
+</ArrayOfVuelo>

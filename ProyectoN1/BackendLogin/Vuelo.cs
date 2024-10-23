@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Proyecto1_progra4
+namespace ProyectoN1
 {
     public class Vuelo
     {

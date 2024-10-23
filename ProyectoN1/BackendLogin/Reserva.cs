@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Proyecto1_progra4
+namespace ProyectoN1
 {
-    public class Reserva
+    public class Reservar
     {
         public Cliente Cliente { get; set; }
         public Vuelo Vuelo { get; set; }
