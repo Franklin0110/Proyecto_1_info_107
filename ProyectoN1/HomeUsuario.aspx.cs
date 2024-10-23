@@ -12,12 +12,20 @@ namespace ProyectoN1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["current_client"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            Cliente cliente = (Cliente)Session["current_client"];
+            lblNombreCompleto.Text = cliente.Nombre + " " + cliente.Apellidos;
+            lblIdentificacion.Text = cliente.Identificacion;
+            lblFechaNacimiento.Text = cliente.FechaNacimiento.ToString();
+            lblEdad.Text = cliente.Edad.ToString();
         }
 
         protected void btnNuevaReserva_Click(object sender, EventArgs e)
         {
-            // Lógica para hacer una nueva reserva (vacío por ahora)
+            Response.Redirect("GestionarVuelos.aspx");
         }
 
         protected void btnExportarReservas_Click(object sender, EventArgs e)

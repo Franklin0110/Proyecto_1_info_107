@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Channels;
+using System.Web;
 
-namespace Proyecto1_progra4
+namespace ProyectoN1
 {
     public class ControladorCliente
     {
@@ -9,7 +11,8 @@ namespace Proyecto1_progra4
 
         public ControladorCliente()
         {
-            _xmlCliente = new ManejoXML<Cliente>("clientes.xml");
+
+            _xmlCliente = new ManejoXML<Cliente>(HttpContext.Current.Server.MapPath(@"~/BackendLogin/clientes.xml"));
         }
 
         public Cliente Autenticar(string usuario, string contraseña)
@@ -25,11 +28,21 @@ namespace Proyecto1_progra4
             return null; // Usuario no encontrado o credenciales incorrectas
         }
 
-        public void RegistrarCliente(Cliente nuevoCliente)
+        public bool RegistrarCliente(Cliente nuevoCliente)
         {
-            var clientes = _xmlCliente.Cargar();
-            clientes.Add(nuevoCliente);
-            _xmlCliente.Guardar(clientes);
+            try
+            {
+                var clientes = _xmlCliente.Cargar();
+                clientes.Add(nuevoCliente);
+                _xmlCliente.Guardar(clientes);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+
         }
     }
 }

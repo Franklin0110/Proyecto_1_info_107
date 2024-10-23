@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web;
 
 
-namespace Proyecto1_progra4
+namespace ProyectoN1
 {
     public class ControladorVuelo
     {
@@ -10,7 +11,7 @@ namespace Proyecto1_progra4
 
         public ControladorVuelo()
         {
-            _xmlVuelo = new ManejoXML<Vuelo>("vuelos.xml");
+            _xmlVuelo = new ManejoXML<Vuelo>(HttpContext.Current.Server.MapPath("~/BackendLogin/vuelos.xml"));
         }
 
         public List<Vuelo> ObtenerVuelos()

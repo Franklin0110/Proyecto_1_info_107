@@ -12,7 +12,10 @@ namespace ProyectoN1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["current_client"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void btnGestionarVuelos_Click(object sender, EventArgs e)
