@@ -91,6 +91,18 @@
             margin-top: 10px;
             display: none;
         }
+        .error {
+            color: #ff0000; /* Rojo intenso para llamar la atención */
+            font-weight: bold; /* Negrita para resaltar */
+            background-color: #ffe6e6; /* Fondo suave en tono rosado */
+            border: 1px solid #ff0000; /* Borde rojo para enmarcar */
+            padding: 10px; /* Espacio alrededor del texto */
+            border-radius: 5px; /* Bordes redondeados */
+            display: block; /* Asegura que se muestre como un bloque completo */
+            margin-top: 10px; /* Espacio entre el error y los demás elementos */
+            width: 96.5%; /* Se ajusta al ancho disponible */
+            text-align: center; /* Centrar el texto */
+         }
     </style>
 </head>
 <body>
@@ -103,15 +115,15 @@
             </div>
             <div>
                 <asp:Label ID="lblContrasena" runat="server" Text="Contraseña"></asp:Label>
-                <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password" placeholder="Ingrese su contraseña"></asp:TextBox>
+                <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password" placeholder="Ingrese su contraseña"></asp:TextBox> 
             </div>
             <div>
-                <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesión" OnClick="btnIniciarSesion_Click" />
+                <asp:Button ID="btnIniciarSesion" runat="server" OnClick="btnIniciarSesion_Click" Text="Iniciar Sesión" />
             </div>
-            <asp:Label ID="lblError" runat="server" CssClass="error-message" Visible="false"></asp:Label>
             <div>
                 <asp:Button ID="btnRegistrarse" runat="server" Text="Regístrate" CssClass="register-button" OnClick="btnRegistrarse_Click" />
             </div>
+            <asp:Label class="error" ID="lblError" runat="server" ForeColor="Red" Visible="false" Text="Algun error random"></asp:Label>
         </div>
     </form>
 </body>

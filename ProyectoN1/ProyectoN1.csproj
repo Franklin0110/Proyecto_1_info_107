@@ -134,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="BackendLogin\cliente.xml" />
+    <Content Include="BackendLogin\Clientes.xml" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -155,13 +155,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="GestionarVuelosAdmin.aspx" />
     <Content Include="GestionarVuelos.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeAdmin.aspx" />
     <Content Include="HomeUsuario.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Registrarse.aspx" />
-    <Content Include="Reserva.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -253,6 +253,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GestionarVuelosAdmin.aspx.cs">
+      <DependentUpon>GestionarVuelosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionarVuelosAdmin.aspx.designer.cs">
+      <DependentUpon>GestionarVuelosAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GestionarVuelos.aspx.cs">
       <DependentUpon>GestionarVuelos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -292,13 +299,6 @@
     </Compile>
     <Compile Include="Registrarse.aspx.designer.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Reserva.aspx.cs">
-      <DependentUpon>Reserva.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reserva.aspx.designer.cs">
-      <DependentUpon>Reserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackendLogin\Reserva.cs" />
     <Compile Include="Site.Master.cs">

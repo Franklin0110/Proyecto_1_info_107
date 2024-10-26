@@ -1,52 +1,67 @@
 <?xml version="1.0"?>
 <ArrayOfVuelo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Vuelo>
-    <Origen>asdasda</Origen>
-    <Destino>asdadas</Destino>
+    <ID>8400be0a-3684-4d77-85fb-90cdd18b954c</ID>
+    <Origen>San José</Origen>
+    <Destino>Ciudad de México</Destino>
+    <Fecha>2024-10-17T14:30:00</Fecha>
+    <Capacidad>180</Capacidad>
+    <AsientosDisponibles>20</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <ID>c7809645-12f3-49a2-aa9c-30a59a50931a</ID>
+    <Origen>San José</Origen>
+    <Destino>Ciudad de México</Destino>
+    <Fecha>2024-10-17T03:30:00</Fecha>
+    <Capacidad>180</Capacidad>
+    <AsientosDisponibles>20</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <ID>01462344-24d1-4f28-9570-bb37e990efc9</ID>
+    <Origen>Ciudad de México</Origen>
+    <Destino>San José</Destino>
+    <Fecha>2024-10-17T12:35:00</Fecha>
+    <Capacidad>180</Capacidad>
+    <AsientosDisponibles>20</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <ID>c14c3c44-5269-4541-98eb-7cc448f3edec</ID>
+    <Origen>Ciudad de México</Origen>
+    <Destino>San José</Destino>
+    <Fecha>2024-10-17T21:30:00</Fecha>
+    <Capacidad>180</Capacidad>
+    <AsientosDisponibles>20</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <ID>011bb98d-05c7-45b5-8520-c9ea9a726a9e</ID>
+    <Origen>Ciudad de México</Origen>
+    <Destino>San José</Destino>
+    <Fecha>2024-10-17T07:30:00</Fecha>
+    <Capacidad>180</Capacidad>
+    <AsientosDisponibles>20</AsientosDisponibles>
+  </Vuelo>
+  <Vuelo>
+    <ID>31a74412-01d5-45b6-b63c-3c64bc4fda71</ID>
+    <Origen>Ciudad de Micasa</Origen>
+    <Destino>San Pedrito</Destino>
     <Fecha>2024-10-17T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>2</AsientosDisponibles>
+    <Capacidad>180</Capacidad>
+    <AsientosDisponibles>0</AsientosDisponibles>
   </Vuelo>
   <Vuelo>
-    <Origen>otro vuelo</Origen>
-    <Destino>otro vuelo puede</Destino>
-    <Fecha>2024-10-17T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>2</AsientosDisponibles>
-  </Vuelo>
-  <Vuelo>
-    <Origen>asdasdasdas123321</Origen>
-    <Destino>12312asdd</Destino>
-    <Fecha>2024-10-03T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>3</AsientosDisponibles>
-  </Vuelo>
-  <Vuelo>
-    <Origen>asd</Origen>
-    <Destino>asasdas</Destino>
-    <Fecha>2024-10-17T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>2</AsientosDisponibles>
-  </Vuelo>
-  <Vuelo>
+    <ID>d5515c0b-7e2f-47dd-abc8-bd46598cd128</ID>
     <Origen>asdas</Origen>
-    <Destino>asdasd</Destino>
-    <Fecha>2024-10-17T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>3</AsientosDisponibles>
+    <Destino>asdasdasd</Destino>
+    <Fecha>2024-10-30T00:10:00</Fecha>
+    <Capacidad>30</Capacidad>
+    <AsientosDisponibles>0</AsientosDisponibles>
   </Vuelo>
   <Vuelo>
-    <Origen>asdasdas</Origen>
-    <Destino>asdasda</Destino>
-    <Fecha>2024-10-19T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>3</AsientosDisponibles>
-  </Vuelo>
-  <Vuelo>
-    <Origen>abc</Origen>
-    <Destino>abc</Destino>
-    <Fecha>2024-10-12T00:00:00</Fecha>
-    <Capacidad>0</Capacidad>
-    <AsientosDisponibles>2</AsientosDisponibles>
+    <ID>4fb29fe8-27cb-4657-a20e-1d6cf87969b0</ID>
+    <Origen>asdas</Origen>
+    <Destino>asdasdas</Destino>
+    <Fecha>2024-10-25T20:45:00</Fecha>
+    <Capacidad>30</Capacidad>
+    <AsientosDisponibles>0</AsientosDisponibles>
   </Vuelo>
 </ArrayOfVuelo>

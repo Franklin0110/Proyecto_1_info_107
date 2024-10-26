@@ -25,5 +25,42 @@ namespace ProyectoN1
             vuelos.Add(nuevoVuelo);
             _xmlVuelo.Guardar(vuelos);
         }
+
+        public void ModificarVuelo(Vuelo vuelo)
+        {
+            var vuelos = _xmlVuelo.Cargar();
+            foreach (Vuelo vueloItem in vuelos)
+            {
+                if (vuelo.ID == vueloItem.ID)
+                {
+                    vueloItem.Origen = vuelo.Origen;
+                    vueloItem.Destino = vuelo.Destino;
+                    vueloItem.AsientosDisponibles = vuelo.AsientosDisponibles;
+                    vueloItem.Capacidad = vuelo.Capacidad;
+                    vueloItem.Fecha = vuelo.Fecha;
+                    break;
+                }
+
+            }
+            _xmlVuelo.Guardar(vuelos);
+        }
+
+        public void EliminarVuelo(Guid ID)
+        {
+
+            var vuelos = _xmlVuelo.Cargar();
+            foreach (var vueloItem in vuelos)
+            {
+                if (ID == vueloItem.ID)
+                {
+                    vuelos.Remove(vueloItem);
+                    break;
+                }
+
+            }
+            _xmlVuelo.Guardar(vuelos);
+
+
+        }
     }
 }

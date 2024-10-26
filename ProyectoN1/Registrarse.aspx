@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Registro de Usuario</title>
     <style>
         body {
@@ -18,72 +18,76 @@
 
         .register-container {
             background-color: white;
-            padding: 20px; 
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             width: 360px;
-            text-align: left; 
+            text-align: left;
         }
 
-        .register-container h2 {
-            margin-bottom: 20px;
-            color: #333;
-            font-size: 24px; 
-            text-align: center; 
-        }
+            .register-container h2 {
+                margin-bottom: 20px;
+                color: #333;
+                font-size: 24px;
+                text-align: center;
+            }
 
-        .register-container div {
-            margin-bottom: 15px;
-        }
+            .register-container div {
+                margin-bottom: 15px;
+            }
 
-        .register-container label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
+            .register-container label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }
 
-        .register-container input[type="text"],
-        .register-container input[type="password"],
-        .register-container input[type="date"] { /* Agregado input[type="date"] */
-            width: 100%;
-            padding: 10px; 
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
+            .register-container input[type="text"],
+            .register-container input[type="password"],
+            .register-container input[type="date"] { /* Agregado input[type="date"] */
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
 
-        .register-container button {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff; 
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px; 
-        }
+            .register-container button {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
 
-        .register-container button:hover {
-            background-color: #0056b3; 
-        }
+                .register-container button:hover {
+                    background-color: #0056b3;
+                }
+        .error {
+            color: #ff0000; /* Rojo intenso para llamar la atención */
+            font-weight: bold; /* Negrita para resaltar */
+            background-color: #ffe6e6; /* Fondo suave en tono rosado */
+            border: 1px solid #ff0000; /* Borde rojo para enmarcar */
+            padding: 10px; /* Espacio alrededor del texto */
+            border-radius: 5px; /* Bordes redondeados */
+            display: block; /* Asegura que se muestre como un bloque completo */
+            margin-top: 10px; /* Espacio entre el error y los demás elementos */
+            width: 96.5%; /* Se ajusta al ancho disponible */
+            text-align: center; /* Centrar el texto */
+         }
 
-        .error-message {
-            color: red;
-            text-align: center;
-            margin-top: 10px;
-            display: none;
-        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="register-container">
             <h2>Registro de Usuario</h2>
-            <asp:Label ID="lblError" runat="server" CssClass="error-message" Visible="false"></asp:Label>
-            
             <div>
                 <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
                 <asp:TextBox ID="txtNombre" runat="server" Placeholder="Ingrese su nombre"></asp:TextBox>
@@ -107,15 +111,16 @@
             </div>
             <div>
                 <asp:Label ID="lblContrasena" runat="server" Text="Contraseña"></asp:Label>
-                <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password" Placeholder="Ingrese su contraseña"></asp:TextBox>
+                <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password" Placeholder="Ingrese su contraseña" Enabled="true"></asp:TextBox>
             </div>
             <div>
                 <asp:Label ID="lblConfirmarContrasena" runat="server" Text="Confirmar Contraseña"></asp:Label>
-                <asp:TextBox ID="txtConfirmarContrasena" runat="server" TextMode="Password" Placeholder="Confirme su contraseña"></asp:TextBox>
+                <asp:TextBox ID="txtConfirmarContrasena" runat="server" TextMode="Password" Placeholder="Confirme su contraseña" Enabled="true"></asp:TextBox>
             </div>
             <asp:Button ID="btnRegistrarse" runat="server" Text="Regístrate" OnClick="btnRegistrarse_Click" />
             <asp:Button ID="btnCancelar" runat="server" OnClick="btnCancelar_Click" Text="Cancelar" />
         </div>
+                    <asp:Label class="error" ID="lblError" runat="server" ForeColor="Red" Visible="false" Text="Algun error random"></asp:Label>
     </form>
 </body>
 </html>

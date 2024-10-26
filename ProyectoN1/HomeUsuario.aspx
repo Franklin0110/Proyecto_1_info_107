@@ -41,6 +41,18 @@
             font-weight: bold;
             color: #555;
         }
+        .error {
+            color: #ff0000; /* Rojo intenso para llamar la atención */
+            font-weight: bold; /* Negrita para resaltar */
+            background-color: #ffe6e6; /* Fondo suave en tono rosado */
+            border: 1px solid #ff0000; /* Borde rojo para enmarcar */
+            padding: 10px; /* Espacio alrededor del texto */
+            border-radius: 5px; /* Bordes redondeados */
+            display: block; /* Asegura que se muestre como un bloque completo */
+            margin-top: 10px; /* Espacio entre el error y los demás elementos */
+            width: 96.5%; /* Se ajusta al ancho disponible */
+            text-align: center; /* Centrar el texto */
+         }
 
         .home-container .info-section .info-value {
             margin-bottom: 10px;
@@ -104,29 +116,25 @@
                 <div class="info-value">
                     <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de Nacimiento"></asp:Label>
                 </div>
-                <label>Edad:</label>
-                <div class="info-value">
-                    <asp:Label ID="lblEdad" runat="server" Text="Edad"></asp:Label>
-                </div>
             </div>
 
             <div class="reservas-section">
                 <h3>Reservas Realizadas</h3>
-                <asp:GridView ID="gvReservas" runat="server" AutoGenerateColumns="False" CssClass="table">
-                    <Columns>
-                        <asp:BoundField DataField="Vuelo" HeaderText="Vuelo" />
-                        <asp:BoundField DataField="AeropuertoOrigen" HeaderText="Aeropuerto Origen" />
-                        <asp:BoundField DataField="AeropuertoDestino" HeaderText="Aeropuerto Destino" />
-                        <asp:BoundField DataField="FechaSalida" HeaderText="Fecha de Salida" />
-                        <asp:BoundField DataField="FechaLlegada" HeaderText="Fecha de Llegada" />
-                        <asp:BoundField DataField="CantidadBoletos" HeaderText="Boletos" />
-                    </Columns>
-                </asp:GridView>
+            <asp:GridView ID="gvReservas" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="ID" HeaderText="ID" />
+                    <asp:BoundField DataField="Origen" HeaderText="Origen" />
+                    <asp:BoundField DataField="Destino" HeaderText="Destino" />
+                    <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
+                </Columns>
+            </asp:GridView>
 
-                <asp:Button ID="btnNuevaReserva" runat="server" Text="Hacer Nueva Reserva" OnClick="btnNuevaReserva_Click" />
-                <asp:Button ID="btnExportarReservas" runat="server" Text="Exportar Reservas" OnClick="btnExportarReservas_Click" />
+                <asp:Button ID="btnNuevaReserva" runat="server" Text="Hacer Nueva Reserva" OnClick="btnNuevaReserva_Click" />    
+                 <asp:Button ID="btnSalir" runat="server" Text="salir" OnClick="btnSalir_funcion" />    
+
             </div>
-        </div>
+            <asp:Label class="error" ID="lblError" runat="server" ForeColor="Red" Visible="false" Text="Algun error random"></asp:Label>
+         </div>
     </form>
 </body>
 </html>

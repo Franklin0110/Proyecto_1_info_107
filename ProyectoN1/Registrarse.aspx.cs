@@ -18,23 +18,44 @@ namespace ProyectoN1
 
         protected void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente 
-            { 
-              Nombre = txtUsuario.Text,
-              Apellidos = txtApellido.Text, 
-              Contraseña = txtContrasena.Text, 
-              FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text), 
-              Identificacion = txtIdentificacion.Text, 
-              Usuario = txtUsuario.Text, Rol = "cliente" 
-            };
-            if (_controlador_cliente.RegistrarCliente(cliente)) Response.Redirect("Login.aspx");
-
+            if (txtUsuario.Text.Equals("") || txtApellido.Text.Equals("") || txtContrasena.Text.Equals("") || txtFechaNacimiento.Text.Equals("")
+                || txtIdentificacion.Text.Equals("") || txtIdentificacion.Text.Equals("") || txtUsuario.Text.Equals(""))
+            {
+                lblError.Text = "Porfavor no deje valores en blanco";
+                lblError.Visible = true;
+            }
+            else
+            {
+                if (txtContrasena.Text.Equals(txtConfirmarContrasena.Text))
+                {
+                    Cliente cliente = new Cliente
+                    {
+                        Nombre = txtUsuario.Text,
+                        Apellidos = txtApellido.Text,
+                        Contraseña = txtContrasena.Text,
+                        FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text),
+                        Identificacion = txtIdentificacion.Text,
+                        Usuario = txtUsuario.Text,
+                        Rol = "cliente"
+                    };
+                    if (_controlador_cliente.RegistrarCliente(cliente)) Response.Redirect("Login.aspx");
+                }
+                else
+                {
+                    lblError.Text = "Contraseña no coincide";
+                    lblError.Visible = true;
+                }
+            }
 
         }
-
+        // Intentando que se active el confirmar contraseña solo si hay una contraseña previa
         protected void txtConfirmarContrasena_TextChanged(object sender, EventArgs e)
         {
-
+            if (!txtContrasena.Text.Equals(""))
+            {
+                txtConfirmarContrasena.Enabled = true;
+            }
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)

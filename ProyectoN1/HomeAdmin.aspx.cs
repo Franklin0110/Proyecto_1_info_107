@@ -12,7 +12,7 @@ namespace ProyectoN1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["current_client"] == null)
+            if (Session["Usuario"] == null)
             {
                 Response.Redirect("Login.aspx");
             }
@@ -20,7 +20,7 @@ namespace ProyectoN1
 
         protected void btnGestionarVuelos_Click(object sender, EventArgs e)
         {
-            // Lógica para gestionar vuelos (vacío por ahora)
+            Response.Redirect("GestionarVuelosAdmin.aspx");
         }
 
         protected void btnVerReservas_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace ProyectoN1
 
         protected void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            // Lógica para cerrar sesión (vacío por ahora)
+            Session["Usuario"] = null;
             Response.Redirect("Login.aspx");
         }
     }

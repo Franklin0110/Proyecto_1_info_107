@@ -54,7 +54,6 @@
         <div class="admin-home-container">
             <h2>Bienvenido, Administrador</h2>
             <asp:Button ID="btnGestionarVuelos" runat="server" Text="Gestionar Vuelos" OnClick="btnGestionarVuelos_Click" />
-            <asp:Button ID="btnVerReservas" runat="server" Text="Ver Reservas" OnClick="btnVerReservas_Click" />
             <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" />
         </div>
     </form>

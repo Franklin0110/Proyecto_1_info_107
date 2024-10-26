@@ -33,49 +33,40 @@ namespace ProyectoN1
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// txtOrigen control.
+        /// ddlOrigen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOrigen;
+        protected global::System.Web.UI.WebControls.DropDownList ddlOrigen;
 
         /// <summary>
-        /// txtDestino control.
+        /// ddlDestino control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDestino;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDestino;
 
         /// <summary>
-        /// txtFecha control.
+        /// ddlFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFecha;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFecha;
 
         /// <summary>
-        /// txtHora control.
+        /// txtCupos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtHora;
-
-        /// <summary>
-        /// txtCupo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCupo;
+        protected global::System.Web.UI.WebControls.TextBox txtCupos;
 
         /// <summary>
         /// gvVuelos control.
