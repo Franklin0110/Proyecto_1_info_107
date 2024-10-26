@@ -13,7 +13,7 @@ namespace ProyectoN1
             _xmlReserva = new ManejoXML<Reservar>(HttpContext.Current.Server.MapPath("~/BackendLogin/reservas.xml"));
         }
 
-        public void RegistrarReserva(int clienteID, Guid vueloID, int cantidadBoletos)
+        public void RegistrarReserva(Guid clienteID, Guid vueloID, int cantidadBoletos)
         {
             var reservas = _xmlReserva.Cargar();
             Reservar nuevaReserva = new Reservar
@@ -28,7 +28,7 @@ namespace ProyectoN1
             _xmlReserva.Guardar(reservas);
         }
 
-        public List<Reservar> ObtenerReservasPorCliente(int clienteID)
+        public List<Reservar> ObtenerReservasPorCliente(Guid clienteID)
         {
             var reservas = _xmlReserva.Cargar();
             return reservas.FindAll(r => r.ClienteID == clienteID);

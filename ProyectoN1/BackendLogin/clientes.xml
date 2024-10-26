@@ -1,43 +1,43 @@
 <?xml version="1.0"?>
 <ArrayOfCliente xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Cliente>
-    <ID>0</ID>
+    <ID>21776ed2-7c28-45bd-b2fa-ebc3850eefbe</ID>
     <Nombre>Franklin</Nombre>
     <Apellidos>Rojas Vargas</Apellidos>
     <Identificacion>119200688</Identificacion>
-    <FechaNacimiento>2024-10-15T00:00:00</FechaNacimiento>
+    <FechaNacimiento>2002-07-11T00:00:00</FechaNacimiento>
     <Usuario>Franklin</Usuario>
-    <Contraseña>912785@dV!c3</Contraseña>
+    <Contraseña>123</Contraseña>
     <Rol>cliente</Rol>
   </Cliente>
   <Cliente>
-    <ID>1</ID>
-    <Nombre>Bayron</Nombre>
-    <Apellidos>Solano</Apellidos>
-    <Identificacion>207110527</Identificacion>
-    <FechaNacimiento>1993-04-05T00:00:00</FechaNacimiento>
-    <Usuario>bsolanoh</Usuario>
-    <Contraseña>12345</Contraseña>
-    <Rol>admin</Rol>
-  </Cliente>
-  <Cliente>
-    <ID>2</ID>
+    <ID>a5dac747-add2-4ca8-b7d9-d15d60567156</ID>
     <Nombre>abc</Nombre>
     <Apellidos>abc</Apellidos>
-    <Identificacion>123</Identificacion>
-    <FechaNacimiento>2024-10-04T00:00:00</FechaNacimiento>
+    <Identificacion>abc</Identificacion>
+    <FechaNacimiento>2024-10-10T00:00:00</FechaNacimiento>
     <Usuario>abc</Usuario>
     <Contraseña>abc</Contraseña>
+    <Rol>cliente</Rol>
+  </Cliente>
+  <Cliente>
+    <ID>c550384d-b810-4563-ade3-485adea8fb9e</ID>
+    <Nombre>admin</Nombre>
+    <Apellidos>Admin</Apellidos>
+    <Identificacion>8888</Identificacion>
+    <FechaNacimiento>2024-10-11T00:00:00</FechaNacimiento>
+    <Usuario>admin</Usuario>
+    <Contraseña>admin</Contraseña>
     <Rol>admin</Rol>
   </Cliente>
   <Cliente>
-    <ID>0</ID>
-    <Nombre>asdasd</Nombre>
-    <Apellidos>asdas</Apellidos>
-    <Identificacion>21321</Identificacion>
-    <FechaNacimiento>2024-10-11T00:00:00</FechaNacimiento>
-    <Usuario>asdasd</Usuario>
-    <Contraseña>abc123</Contraseña>
+    <ID>a06748d6-cd59-4f5a-83c2-61138705b586</ID>
+    <Nombre>Gabo</Nombre>
+    <Apellidos>Quesada</Apellidos>
+    <Identificacion>123455679</Identificacion>
+    <FechaNacimiento>2024-10-24T00:00:00</FechaNacimiento>
+    <Usuario>Gabo</Usuario>
+    <Contraseña>123</Contraseña>
     <Rol>cliente</Rol>
   </Cliente>
 </ArrayOfCliente>

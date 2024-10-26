@@ -1,33 +1,21 @@
 <?xml version="1.0"?>
 <ArrayOfReservar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Reservar>
-    <ClienteID>2</ClienteID>
-    <VueloID>a8d198f8-0832-4475-98f0-45b4eb525cde</VueloID>
-    <FechaReserva>2024-10-24T20:49:16.0614916-06:00</FechaReserva>
-    <CantidadBoletos>1</CantidadBoletos>
-  </Reservar>
-  <Reservar>
-    <ClienteID>2</ClienteID>
-    <VueloID>c7809645-12f3-49a2-aa9c-30a59a50931a</VueloID>
-    <FechaReserva>2024-10-24T20:49:25.8093914-06:00</FechaReserva>
-    <CantidadBoletos>4</CantidadBoletos>
-  </Reservar>
-  <Reservar>
-    <ClienteID>0</ClienteID>
-    <VueloID>c14c3c44-5269-4541-98eb-7cc448f3edec</VueloID>
-    <FechaReserva>2024-10-24T20:49:59.9382969-06:00</FechaReserva>
-    <CantidadBoletos>1</CantidadBoletos>
-  </Reservar>
-  <Reservar>
-    <ClienteID>2</ClienteID>
-    <VueloID>011bb98d-05c7-45b5-8520-c9ea9a726a9e</VueloID>
-    <FechaReserva>2024-10-24T21:16:45.3320526-06:00</FechaReserva>
+    <ClienteID>21776ed2-7c28-45bd-b2fa-ebc3850eefbe</ClienteID>
+    <VueloID>8400be0a-3684-4d77-85fb-90cdd18b954c</VueloID>
+    <FechaReserva>2024-10-25T22:08:40.9091247-06:00</FechaReserva>
     <CantidadBoletos>2</CantidadBoletos>
   </Reservar>
   <Reservar>
-    <ClienteID>0</ClienteID>
-    <VueloID>8400be0a-3684-4d77-85fb-90cdd18b954c</VueloID>
-    <FechaReserva>2024-10-25T20:46:30.163834-06:00</FechaReserva>
+    <ClienteID>a5dac747-add2-4ca8-b7d9-d15d60567156</ClienteID>
+    <VueloID>d5515c0b-7e2f-47dd-abc8-bd46598cd128</VueloID>
+    <FechaReserva>2024-10-25T22:09:13.3527874-06:00</FechaReserva>
+    <CantidadBoletos>3</CantidadBoletos>
+  </Reservar>
+  <Reservar>
+    <ClienteID>a06748d6-cd59-4f5a-83c2-61138705b586</ClienteID>
+    <VueloID>01462344-24d1-4f28-9570-bb37e990efc9</VueloID>
+    <FechaReserva>2024-10-25T22:14:23.3571516-06:00</FechaReserva>
     <CantidadBoletos>5</CantidadBoletos>
   </Reservar>
 </ArrayOfReservar>
