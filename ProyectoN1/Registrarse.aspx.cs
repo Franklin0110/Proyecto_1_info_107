@@ -30,6 +30,7 @@ namespace ProyectoN1
                 {
                     Cliente cliente = new Cliente
                     {
+                        ID = Guid.NewGuid(),
                         Nombre = txtUsuario.Text,
                         Apellidos = txtApellido.Text,
                         Contraseña = txtContrasena.Text,
@@ -55,7 +56,7 @@ namespace ProyectoN1
             {
                 txtConfirmarContrasena.Enabled = true;
             }
-           
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)

@@ -42,9 +42,9 @@
   </Vuelo>
   <Vuelo>
     <ID>31a74412-01d5-45b6-b63c-3c64bc4fda71</ID>
-    <Origen>Ciudad de Micasa</Origen>
-    <Destino>San Pedrito</Destino>
-    <Fecha>2024-10-17T00:00:00</Fecha>
+    <Origen>Madrid</Origen>
+    <Destino>NIcaragua</Destino>
+    <Fecha>2024-10-16T13:18:00</Fecha>
     <Capacidad>180</Capacidad>
     <AsientosDisponibles>0</AsientosDisponibles>
   </Vuelo>
@@ -57,11 +57,11 @@
     <AsientosDisponibles>0</AsientosDisponibles>
   </Vuelo>
   <Vuelo>
-    <ID>4fb29fe8-27cb-4657-a20e-1d6cf87969b0</ID>
-    <Origen>asdas</Origen>
-    <Destino>asdasdas</Destino>
-    <Fecha>2024-10-25T20:45:00</Fecha>
-    <Capacidad>30</Capacidad>
+    <ID>b17632ea-4cb3-4cdb-addc-9e21eff72d4e</ID>
+    <Origen>New York</Origen>
+    <Destino>Panama</Destino>
+    <Fecha>2024-10-16T01:19:00</Fecha>
+    <Capacidad>130</Capacidad>
     <AsientosDisponibles>0</AsientosDisponibles>
   </Vuelo>
 </ArrayOfVuelo>

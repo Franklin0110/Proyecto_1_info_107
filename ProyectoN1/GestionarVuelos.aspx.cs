@@ -62,7 +62,6 @@ namespace ProyectoN1
                         existe = 1;
                         break;
                     }
-
                 }
                 foreach (var item in ddlOrigen.Items)
                 {
