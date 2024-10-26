@@ -25,8 +25,9 @@ namespace ProyectoN1
                     return cliente;
                 }
             }
-            return null; // Usuario no encontrado o credenciales incorrectas
+            return null; 
         }
+
 
         public bool RegistrarCliente(Cliente nuevoCliente)
         {

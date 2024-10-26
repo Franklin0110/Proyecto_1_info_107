@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GestionarVuelos.aspx.cs" Inherits="ProyectoN1.GestionarVuelos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GestionarVuelosAdmin.aspx.cs" Inherits="ProyectoN1.GestionarVuelosAdmin" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -83,37 +83,51 @@
             margin-top: 10px;
             display: none;
         }
+
+        .error {
+            color: #ff0000; /* Rojo intenso para llamar la atención */
+            font-weight: bold; /* Negrita para resaltar */
+            background-color: #ffe6e6; /* Fondo suave en tono rosado */
+            border: 1px solid #ff0000; /* Borde rojo para enmarcar */
+            padding: 10px; /* Espacio alrededor del texto */
+            border-radius: 5px; /* Bordes redondeados */
+            display: block; /* Asegura que se muestre como un bloque completo */
+            margin-top: 10px; /* Espacio entre el error y los demás elementos */
+            width: 96.5%; /* Se ajusta al ancho disponible */
+            text-align: center; /* Centrar el texto */
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="container">
             <h2>Gestionar Vuelos</h2>
-            <asp:Label ID="lblError" runat="server" CssClass="error-message" Visible="false"></asp:Label>
-
             <div class="form-group">
+                <label for="ddlOrigen">ID del vuelo</label>
+                <asp:TextBox ID="txtID" runat="server" AutoPostBack="True" OnSelectedIndexChanged="gvVuelos_PageIndexChanged" />
+                </asp:TextBox>
+                <asp:Button type="submit" runat="server" OnClick="btnCargar_vuelo_por_ID" Text="Cargar" />
                 <label for="ddlOrigen">Aeropuerto de Origen</label>
-                <asp:DropDownList ID="ddlOrigen" runat="server" AutoPostBack="True" OnSelectedIndexChanged="gvVuelos_PageIndexChanged" />
-                <asp:ListItem Text="Seleccione un aeropuerto" Value="" />
-                </asp:DropDownList>
+                <asp:TextBox ID="txtOrigen" runat="server" AutoPostBack="True" OnSelectedIndexChanged="gvVuelos_PageIndexChanged" />
+                </asp:TextBox>
             </div>
             <div class="form-group">
                 <label for="ddlDestino">Aeropuerto de Destino</label>
-                <asp:DropDownList ID="ddlDestino" runat="server" AutoPostBack="True" OnSelectedIndexChanged="gvVuelos_PageIndexChanged">
-                </asp:DropDownList>
+                <asp:TextBox ID="txtDestino" runat="server" AutoPostBack="True" OnSelectedIndexChanged="gvVuelos_PageIndexChanged"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label for="ddlFecha">Fecha del Vuelo</label>
-                <asp:DropDownList ID="ddlFecha" runat="server" />
-                <asp:ListItem Text="Seleccione un aeropuerto" Value="" />
-                </asp:DropDownList>
+                <asp:TextBox ID="txtFecha" runat="server" TextMode="DateTimeLocal"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label for="txtCupos">Cupo de Pasajeros</label>
                 <asp:TextBox runat="server" ID="txtCupos" Placeholder="Ingrese el número de pasajeros"></asp:TextBox>
             </div>
-            <asp:Button type="submit" runat="server" OnClick="btnAgregar_Click" Text="Reservar Vuelo" />
+            <asp:Button type="submit" runat="server" OnClick="btnAgregar_Click" Text="Agregar Vuelo" />
+            <asp:Button type="submit" runat="server" OnClick="btnModificar_Click" Text="Modificar Vuelo" />
+            <asp:Button type="submit" runat="server" OnClick="btnEliminar_Click" Text="Eliminar Vuelo" />
             <asp:Button type="submit" runat="server" OnClick="btnVolver_Click" Text="Salir" />
+            <asp:Label class="error" ID="lblError" runat="server" ForeColor="Red" Visible="false" Text="Algun error random"></asp:Label>
         </div>
 
         <div class="container">
@@ -127,6 +141,7 @@
                 </Columns>
             </asp:GridView>
         </div>
+
     </form>
 </body>
 </html>

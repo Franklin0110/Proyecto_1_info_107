@@ -1,15 +1,7 @@
 <?xml version="1.0"?>
 <ArrayOfCliente xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Cliente>
-    <Nombre>asdsa</Nombre>
-    <Apellidos>asdasd</Apellidos>
-    <Identificacion>123123</Identificacion>
-    <FechaNacimiento>2024-10-09T00:00:00</FechaNacimiento>
-    <Usuario>asdsa</Usuario>
-    <Contraseña />
-    <Rol>cliente</Rol>
-  </Cliente>
-  <Cliente>
+    <ID>0</ID>
     <Nombre>Franklin</Nombre>
     <Apellidos>Rojas Vargas</Apellidos>
     <Identificacion>119200688</Identificacion>
@@ -19,12 +11,33 @@
     <Rol>cliente</Rol>
   </Cliente>
   <Cliente>
+    <ID>1</ID>
+    <Nombre>Bayron</Nombre>
+    <Apellidos>Solano</Apellidos>
+    <Identificacion>207110527</Identificacion>
+    <FechaNacimiento>1993-04-05T00:00:00</FechaNacimiento>
+    <Usuario>bsolanoh</Usuario>
+    <Contraseña>12345</Contraseña>
+    <Rol>admin</Rol>
+  </Cliente>
+  <Cliente>
+    <ID>2</ID>
     <Nombre>abc</Nombre>
     <Apellidos>abc</Apellidos>
     <Identificacion>123</Identificacion>
-    <FechaNacimiento>2024-10-24T00:00:00</FechaNacimiento>
+    <FechaNacimiento>2024-10-04T00:00:00</FechaNacimiento>
     <Usuario>abc</Usuario>
     <Contraseña>abc</Contraseña>
+    <Rol>admin</Rol>
+  </Cliente>
+  <Cliente>
+    <ID>0</ID>
+    <Nombre>asdasd</Nombre>
+    <Apellidos>asdas</Apellidos>
+    <Identificacion>21321</Identificacion>
+    <FechaNacimiento>2024-10-11T00:00:00</FechaNacimiento>
+    <Usuario>asdasd</Usuario>
+    <Contraseña>abc123</Contraseña>
     <Rol>cliente</Rol>
   </Cliente>
 </ArrayOfCliente>
